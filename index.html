@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MAI TRANG PATISSERIE - Tiệm bánh ngọt nghệ thuật & trà chiều phong cách Pháp thủ công bởi Hồ Nguyễn Mai Trang (MSSV: 125001156). Hương vị tinh tế từ bơ Pháp, bột Uji Nhật Bản và socola Valrhona.">
+    <meta name="author" content="Hồ Nguyễn Mai Trang - MSSV: 125001156">
+    <title>MAI TRANG PATISSERIE | Tiệm Bánh Ngọt Nghệ Thuật & Trà Chiều Pháp</title>
+
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans (Hỗ trợ 100% Tiếng Việt có dấu, chuẩn sang trọng cổ điển) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Animate.css CDN (Yêu cầu đề thi mục II.3 - Thư viện CSS thuần, không dùng JavaScript) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Main Stylesheet (100% HTML5 & CSS3 Thuần - Tone Burgundy & Beige) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-burgundy">
+
+    <!-- ==================================================
+         1. HEADER & NAVIGATION (Chuẩn Semantic HTML5)
+         Tích hợp Hamburger Menu bằng CSS Checkbox Hack (Bài 5 - KHÔNG DÙNG JAVASCRIPT)
+    ================================================== -->
+    <header class="site-header" id="site-header">
+        <div class="header-topbar">
+            <div class="container topbar-content">
+                <span class="topbar-tagline">🍰 MAI TRANG PATISSERIE - NGHỆ THUẬT BÁNH NGỌT & TRÀ CHIỀU PHÁP 🥐</span>
+                <div class="topbar-contact">
+                    <span>Hotline đặt bánh: <strong>0918.125.TRANG</strong></span>
+                    <span class="topbar-divider">|</span>
+                    <span>Showroom: 120 Đại Lộ Patisserie, Quận 1, TP.HCM</span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar container" aria-label="Menu điều hướng chính">
+            <!-- Brand Logo -->
+            <a href="#home" class="brand-logo" aria-label="Trang chủ Mai Trang Patisserie">
+                <div class="logo-crest">
+                    <span class="crest-monogram">MT</span>
+                </div>
+                <div class="logo-text-group">
+                    <span class="brand-name">MAI TRANG</span>
+                    <span class="brand-sub">FRENCH PATISSERIE</span>
+                </div>
+            </a>
+
+            <!-- Checkbox Menu Mobile Toggle (CSS Checkbox Hack Bài 5 - 100% Thuần CSS, Không Dùng JavaScript) -->
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox" aria-label="Mở menu di động">
+            <label for="menu-toggle" class="hamburger-btn" aria-label="Nút mở menu">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+                <span class="bar bar-3"></span>
+            </label>
+
+            <!-- Navigation Links Wrapper -->
+            <div class="nav-menu-wrapper">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Trang Chủ</a></li>
+                    <li class="nav-item"><a href="#collections" class="nav-link">Menu Bánh Ngọt</a></li>
+                    <li class="nav-item"><a href="#products" class="nav-link">Sản Phẩm Nổi Bật</a></li>
+                    <li class="nav-item"><a href="#fabrics" class="nav-link">Nguyên Liệu Thượng Hạng</a></li>
+                    <li class="nav-item"><a href="#process" class="nav-link">Quy Trình Làm Bánh</a></li>
+                    <li class="nav-item"><a href="#booking" class="nav-link">Đặt Bánh & Bàn Trà</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Liên Hệ</a></li>
+                </ul>
+
+                <div class="mobile-only-contact">
+                    <p>Tư vấn đặt bánh tiệc cùng Master Baker:</p>
+                    <a href="tel:0918125156" class="mobile-phone-link">📞 0918.125.TRANG</a>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="nav-actions">
+                <a href="#booking" class="btn btn-burgundy-outline nav-cta animate__animated animate__pulse animate__infinite">
+                    Đặt Bánh Tươi
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================================================
+         2. MAIN CONTENT (Semantic <main>)
+    ================================================== -->
+    <main id="main-content">
+
+        <!-- ==============================================
+             HERO SECTION: Animate.css & Tone Burgundy/Beige
+        =============================================== -->
+        <section id="home" class="hero-section">
+            <div class="hero-backdrop"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge animate__animated animate__fadeInDown">
+                        <span class="badge-icon">🥐</span>
+                        <span>TIỆM BÁNH THỦ CÔNG TƯƠI MỚI MỖI NGÀY 2026</span>
+                    </div>
+
+                    <h1 class="hero-title animate__animated animate__fadeInUp">
+                        Artisan Patisserie By <br>
+                        <span class="text-burgundy">Hồ Nguyễn Mai Trang</span>
+                    </h1>
+
+                    <p class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+                        Mỗi chiếc bánh là một tác phẩm nghệ thuật vị giác được nướng tươi mỗi sớm mai. Hòa quyện giữa lớp bơ thơm béo Elle & Vire chuẩn vùng Normandy nước Pháp, bột Matcha thượng hạng và socola Bỉ đậm đà.
+                    </p>
+
+                    <div class="hero-cta-group animate__animated animate__fadeInUp animate__delay-1s">
+                        <a href="#products" class="btn btn-burgundy btn-luxury">
+                            <span>Khám Phá Menu Bánh</span>
+                            <span class="btn-arrow">→</span>
+                        </a>
+                        <a href="#booking" class="btn btn-glass">
+                            <span>Đặt Bàn Thưởng Trà</span>
+                        </a>
+                    </div>
+
+                    <!-- Highlight Stats -->
+                    <div class="hero-stats-grid animate__animated animate__fadeIn animate__delay-2s">
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Bơ & Kem tươi nhập khẩu Pháp</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">48H</span>
+                            <span class="stat-label">Ủ men lạnh tạo ngàn lớp giòn tan</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">0%</span>
+                            <span class="stat-label">Không chất bảo quản hay phụ gia</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">4.9★</span>
+                            <span class="stat-label">Hơn 4,500 Tín đồ hảo ngọt tin chọn</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             CORE VALUES / PILLARS
+        =============================================== -->
+        <section class="pillars-section">
+            <div class="container">
+                <div class="pillars-grid">
+                    <article class="pillar-card">
+                        <div class="pillar-icon">🥖</div>
+                        <h3 class="pillar-title">Nướng Tươi Trong Ngày</h3>
+                        <p class="pillar-desc">Bánh được nhào nặn và nướng trực tiếp tại xưởng mỗi 6 giờ sáng. Chúng tôi cam kết không lưu trữ bánh qua ngày để giữ trọn vẹn vị tươi mới.</p>
+                    </article>
+
+                    <article class="pillar-card">
+                        <div class="pillar-icon">🧈</div>
+                        <h3 class="pillar-title">Bơ Normandy Pháp</h3>
+                        <p class="pillar-desc">Tuyển chọn bơ nguyên chất Elle & Vire với hàm lượng chất béo 82%, mang đến hương thơm ngọt dịu, nồng nàn và hậu vị sâu lắng.</p>
+                    </article>
+
+                    <article class="pillar-card">
+                        <div class="pillar-icon">🎂</div>
+                        <h3 class="pillar-title">Tạo Hình Nghệ Thuật</h3>
+                        <p class="pillar-desc">Từng đóa hoa kem bơ, nếp socola uốn lượn và cánh hoa ăn được đều được chính Master Pastry Chef Mai Trang trang trí thủ công tỉ mỉ.</p>
+                    </article>
+
+                    <article class="pillar-card">
+                        <div class="pillar-icon">☕</div>
+                        <h3 class="pillar-title">Set Trà Chiều Cổ Điển</h3>
+                        <p class="pillar-desc">Thưởng thức bánh cùng các dòng trà đen Anh Quốc Earl Grey, trà hoa cúc La Mã trong bộ tách gốm sứ hoàng gia sang trọng.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             COLLECTIONS SHOWCASE (Grid Layout)
+        =============================================== -->
+        <section id="collections" class="section collections-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-eyebrow">DANH MỤC HẢO VỊ</span>
+                    <h2 class="section-title">Những Tuyệt Tác Bánh Ngọt Pháp</h2>
+                    <div class="burgundy-line"></div>
+                    <p class="section-desc">Từ những chiếc bánh mì sừng bò giòn xốp đến những ổ bánh kem sinh nhật nghệ thuật kiêu sa cho khoảnh khắc kỷ niệm ngọt ngào.</p>
+                </div>
+
+                <div class="collections-grid">
+                    <!-- Category 1 -->
+                    <article class="collection-tile tile-large">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1000&auto=format&fit=crop" alt="Bánh Kem Sinh Nhật Nghệ Thuật Mai Trang" class="tile-img" loading="lazy">
+                        <div class="tile-overlay">
+                            <span class="tile-tag">Artisan Cakes</span>
+                            <h3 class="tile-title">Bánh Kem Sinh Nhật & Sự Kiện Nghệ Thuật</h3>
+                            <p class="tile-info">Cốt bánh chiffon xốp ẩm, kem phô mai Mascarpone dịu ngọt và quả mọng tươi.</p>
+                            <a href="#products" class="tile-link">Khám phá menu →</a>
+                        </div>
+                    </article>
+
+                    <!-- Category 2 -->
+                    <article class="collection-tile">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=800&auto=format&fit=crop" alt="Bánh Croissant Bơ Pháp Ngàn Lớp" class="tile-img" loading="lazy">
+                        <div class="tile-overlay">
+                            <span class="tile-tag">Viennoiserie</span>
+                            <h3 class="tile-title">Croissant & Bánh Ngàn Lớp Giòn Tan</h3>
+                            <p class="tile-info">Bề mặt vàng ươm, ruột bánh tổ ong phảng phất men bơ Pháp béo ngậy.</p>
+                            <a href="#products" class="tile-link">Khám phá menu →</a>
+                        </div>
+                    </article>
+
+                    <!-- Category 3 -->
+                    <article class="collection-tile">
+                        <img src="https://images.unsplash.com/photo-1569864321390-dc4414e828bb?q=80&w=800&auto=format&fit=crop" alt="Bánh Macaron Paris Đủ Vị" class="tile-img" loading="lazy">
+                        <div class="tile-overlay">
+                            <span class="tile-tag">Parisian Sweet</span>
+                            <h3 class="tile-title">Macaron Paris Hoàng Gia Đủ Vị</h3>
+                            <p class="tile-info">Vỏ bánh hạnh nhân xốp nhẹ, nhân ganache socola và mứt dâu rừng mọng nước.</p>
+                            <a href="#products" class="tile-link">Khám phá menu →</a>
+                        </div>
+                    </article>
+
+                    <!-- Category 4 -->
+                    <article class="collection-tile">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=800&auto=format&fit=crop" alt="Bánh Tart Quả Mọng Mùa Hè" class="tile-img" loading="lazy">
+                        <div class="tile-overlay">
+                            <span class="tile-tag">French Tarts</span>
+                            <h3 class="tile-title">Tart Trái Cây Tươi & Phô Mai Nướng</h3>
+                            <p class="tile-info">Đế tart bơ giòn rụm kết hợp kem sữa chua kem trứng và việt quất tươi mọng.</p>
+                            <a href="#products" class="tile-link">Khám phá menu →</a>
+                        </div>
+                    </article>
+
+                    <!-- Category 5 -->
+                    <article class="collection-tile tile-large">
+                        <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?q=80&w=1000&auto=format&fit=crop" alt="Set Trà Chiều Quý Tộc High Tea" class="tile-img" loading="lazy">
+                        <div class="tile-overlay">
+                            <span class="tile-tag">High Tea Set</span>
+                            <h3 class="tile-title">Tháp Bánh Trà Chiều Hoàng Gia Pháp</h3>
+                            <p class="tile-info">Trải nghiệm tháp 3 tầng bánh ngọt, bánh mặn canapé kèm bình trà thượng hạng.</p>
+                            <a href="#products" class="tile-link">Khám phá menu →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             PRODUCTS SECTION (Semantic <article>, CSS Grid, :hover & :focus)
+        =============================================== -->
+        <section id="products" class="section products-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-eyebrow">MENU BÁNH NƯỚNG ĐẶC BIỆT</span>
+                    <h2 class="section-title">Những Ổ Bánh Được Yêu Thích Nhất</h2>
+                    <div class="burgundy-line"></div>
+                    <p class="section-desc">Mỗi chiếc bánh được chế tác từ tình yêu và nguyên liệu tinh túy nhất của người thợ làm bánh.</p>
+
+                    <!-- Category Navigation Pills -->
+                    <div class="filter-wrapper" role="navigation" aria-label="Danh mục bánh ngọt">
+                        <a href="#products" class="filter-btn active">Tất Cả Món Bánh</a>
+                        <a href="#products" class="filter-btn">Bánh Kem Sinh Nhật</a>
+                        <a href="#products" class="filter-btn">Bánh Mì Croissant</a>
+                        <a href="#products" class="filter-btn">Macaron & Tart</a>
+                        <a href="#products" class="filter-btn">Mousse & Tiramisu</a>
+                        <a href="#products" class="filter-btn">Set Trà Chiều</a>
+                    </div>
+                </div>
+
+                <!-- Product Grid (CSS Grid, :hover effects, semantic <article>) -->
+                <div class="product-grid" id="product-list">
+
+                    <!-- Product 1 -->
+                    <article class="product-card">
+                        <div class="product-thumb">
+                            <span class="product-badge badge-burgundy">Signature Cake</span>
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=700&auto=format&fit=crop" alt="Bánh Red Velvet Rượu Vang Đỏ & Kem Cheese" class="product-img" loading="lazy">
+                            <div class="product-actions-overlay">
+                                <a href="#booking" class="quick-action-btn quick-view-btn">Chi Tiết Bánh</a>
+                                <a href="#booking" class="quick-action-btn add-to-cart-btn">Đặt Bánh Ngay</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Bánh Kem Nghệ Thuật</span>
+                            <h3 class="product-title">Royal Burgundy Red Velvet Cake</h3>
+                            <div class="product-rating">★★★★★ <span class="rating-count">(156)</span></div>
+                            <div class="product-price-box">
+                                <span class="price-current">580.000₫</span>
+                                <span class="price-old">650.000₫</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card">
+                        <div class="product-thumb">
+                            <span class="product-badge badge-beige">Best Seller</span>
+                            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=700&auto=format&fit=crop" alt="Bánh Croissant Bơ Hạnh Nhân Nướng Giòn" class="product-img" loading="lazy">
+                            <div class="product-actions-overlay">
+                                <a href="#booking" class="quick-action-btn quick-view-btn">Chi Tiết Bánh</a>
+                                <a href="#booking" class="quick-action-btn add-to-cart-btn">Đặt Bánh Ngay</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Bánh Mì Ngàn Lớp</span>
+                            <h3 class="product-title">Almond French Butter Croissant</h3>
+                            <div class="product-rating">★★★★★ <span class="rating-count">(210)</span></div>
+                            <div class="product-price-box">
+                                <span class="price-current">65.000₫</span>
+                                <span class="price-old">80.000₫</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card">
+                        <div class="product-thumb">
+                            <span class="product-badge badge-burgundy">Chef Choice</span>
+                            <img src="https://images.unsplash.com/photo-1569864321390-dc4414e828bb?q=80&w=700&auto=format&fit=crop" alt="Hộp Quà 12 Vị Macaron Parisienne" class="product-img" loading="lazy">
+                            <div class="product-actions-overlay">
+                                <a href="#booking" class="quick-action-btn quick-view-btn">Chi Tiết Bánh</a>
+                                <a href="#booking" class="quick-action-btn add-to-cart-btn">Đặt Bánh Ngay</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Bánh Ngọt Paris</span>
+                            <h3 class="product-title">Luxury Macaron Gift Box (12 Pieces)</h3>
+                            <div class="product-rating">★★★★★ <span class="rating-count">(98)</span></div>
+                            <div class="product-price-box">
+                                <span class="price-current">380.000₫</span>
+                                <span class="price-old">420.000₫</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="product-card">
+                        <div class="product-thumb">
+                            <span class="product-badge badge-burgundy">Fresh Fruit</span>
+                            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=700&auto=format&fit=crop" alt="Bánh Strawberry Shortcake Kem Tươi Nhật Bản" class="product-img" loading="lazy">
+                            <div class="product-actions-overlay">
+                                <a href="#booking" class="quick-action-btn quick-view-btn">Chi Tiết Bánh</a>
+                                <a href="#booking" class="quick-action-btn add-to-cart-btn">Đặt Bánh Ngay</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Bánh Kem Trái Cây</span>
+                            <h3 class="product-title">Japanese Strawberry Chiffon Cake</h3>
+                            <div class="product-rating">★★★★★ <span class="rating-count">(184)</span></div>
+                            <div class="product-price-box">
+                                <span class="price-current">520.000₫</span>
+                                <span class="price-old">590.000₫</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 5 -->
+                    <article class="product-card">
+                        <div class="product-thumb">
+                            <span class="product-badge badge-beige">Classic Tart</span>
+                            <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=700&auto=format&fit=crop" alt="Bánh Tart Việt Quất Phô Mai Nướng" class="product-img" loading="lazy">
+                            <div class="product-actions-overlay">
+                                <a href="#booking" class="quick-action-btn quick-view-btn">Chi Tiết Bánh</a>
+                                <a href="#booking" class="quick-action-btn add-to-cart-btn">Đặt Bánh Ngay</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Tart Pháp Thủ Công</span>
+                            <h3 class="product-title">Baked Blueberry Cheese Tart</h3>
+                            <div class="product-rating">★★★★★ <span class="rating-count">(124)</span></div>
+                            <div class="product-price-box">
+                                <span class="price-current">85.000₫</span>
+                                <span class="price-old">95.000₫</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 6 -->
+                    <article class="product-card">
+                        <div class="product-thumb">
+                            <span class="product-badge badge-burgundy">Dark Chocolate</span>
+                            <img src="https://images.unsplash.com/photo-1519869325930-281384150729?q=80&w=700&auto=format&fit=crop" alt="Bánh Mousse Socola Đen Valrhona 70%" class="product-img" loading="lazy">
+                            <div class="product-actions-overlay">
+                                <a href="#booking" class="quick-action-btn quick-view-btn">Chi Tiết Bánh</a>
+                                <a href="#booking" class="quick-action-btn add-to-cart-btn">Đặt Bánh Ngay</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Bánh Mousse Cao Cấp</span>
+                            <h3 class="product-title">Valrhona 70% Dark Chocolate Mousse</h3>
+                            <div class="product-rating">★★★★★ <span class="rating-count">(145)</span></div>
+                            <div class="product-price-box">
+                                <span class="price-current">490.000₫</span>
+                                <span class="price-old">560.000₫</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 7 -->
+                    <article class="product-card">
+                        <div class="product-thumb">
+                            <span class="product-badge badge-beige">Matcha Kyoto</span>
+                            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=700&auto=format&fit=crop" alt="Bánh Tiramisu Trà Xanh Matcha Uji" class="product-img" loading="lazy">
+                            <div class="product-actions-overlay">
+                                <a href="#booking" class="quick-action-btn quick-view-btn">Chi Tiết Bánh</a>
+                                <a href="#booking" class="quick-action-btn add-to-cart-btn">Đặt Bánh Ngay</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Bánh Tiramisu Ý</span>
+                            <h3 class="product-title">Kyoto Uji Matcha Tiramisu Box</h3>
+                            <div class="product-rating">★★★★★ <span class="rating-count">(118)</span></div>
+                            <div class="product-price-box">
+                                <span class="price-current">220.000₫</span>
+                                <span class="price-old">260.000₫</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 8 -->
+                    <article class="product-card">
+                        <div class="product-thumb">
+                            <span class="product-badge badge-burgundy">Afternoon Tea</span>
+                            <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?q=80&w=700&auto=format&fit=crop" alt="Set Thưởng Trà Chiều Quý Tộc Cho 2 Người" class="product-img" loading="lazy">
+                            <div class="product-actions-overlay">
+                                <a href="#booking" class="quick-action-btn quick-view-btn">Chi Tiết Bánh</a>
+                                <a href="#booking" class="quick-action-btn add-to-cart-btn">Đặt Bàn Ngay</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Set Trà Chiều VIP</span>
+                            <h3 class="product-title">Parisian Imperial High Tea Set (For 2)</h3>
+                            <div class="product-rating">★★★★★ <span class="rating-count">(176)</span></div>
+                            <div class="product-price-box">
+                                <span class="price-current">680.000₫</span>
+                                <span class="price-old">790.000₫</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             3D CARD FLIP SHOWCASE (Kế Thừa Bài 2 Buổi 5 Thuần CSS)
+             Giới thiệu 3 Dòng Nguyên Liệu Thượng Hạng
+        =============================================== -->
+        <section id="fabrics" class="section fabric-flip-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-eyebrow">NGUYÊN LIỆU THƯỢNG HẠNG (3D FLIP CARDS BÀI 2)</span>
+                    <h2 class="section-title">3 Tinh Hoa Dệt Nên Hương Vị Khó Phai</h2>
+                    <div class="burgundy-line"></div>
+                    <p class="section-desc"><em>Rê chuột (hoặc chạm vào thẻ) để khám phá nguồn gốc và phẩm cấp nguyên liệu của Mai Trang Patisserie (100% Thuần CSS 3D).</em></p>
+                </div>
+
+                <div class="flip-card-grid">
+
+                    <!-- Flip Card 1 -->
+                    <div class="flip-card-wrapper" tabindex="0">
+                        <div class="flip-card-inner">
+                            <!-- Mặt trước -->
+                            <div class="flip-card-front">
+                                <div class="fabric-badge">Normandy, Pháp</div>
+                                <div class="fabric-icon">🧈</div>
+                                <h3 class="fabric-name">BƠ ELLE & VIRE 82% BÉO</h3>
+                                <p class="fabric-origin">Xuất xứ Normandy, Pháp</p>
+                                <div class="fabric-preview-line"></div>
+                                <p class="fabric-front-desc">Dòng bơ danh tiếng làm từ nguồn sữa bò ăn cỏ tự nhiên, tạo độ nở xốp ngàn lớp và vị béo thanh không ngấy.</p>
+                                <span class="flip-hint">↺ Rê chuột hoặc chạm để lật thẻ</span>
+                            </div>
+                            <!-- Mặt sau -->
+                            <div class="flip-card-back">
+                                <h4 class="back-title">Tiêu Chuẩn Bơ Normandy</h4>
+                                <ul class="spec-list">
+                                    <li><strong>Hàm lượng béo:</strong> 82% chất béo bơ nguyên chất</li>
+                                    <li><strong>Điểm tan chảy:</strong> 34°C (Tan ngay trên đầu lưỡi)</li>
+                                    <li><strong>Chứng nhận:</strong> Tiêu chuẩn ẩm thực châu Âu AOP</li>
+                                    <li><strong>Sử dụng cho:</strong> Croissant, Bánh quy Sable, Brioche</li>
+                                </ul>
+                                <a href="#booking" class="btn btn-burgundy-small">Khám Phá Vị Bánh</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Flip Card 2 -->
+                    <div class="flip-card-wrapper" tabindex="0">
+                        <div class="flip-card-inner">
+                            <!-- Mặt trước -->
+                            <div class="flip-card-front highlight-card">
+                                <div class="fabric-badge">Tain-l'Hermitage, Pháp</div>
+                                <div class="fabric-icon">🍫</div>
+                                <h3 class="fabric-name">SOCOLA VALRHONA 70%</h3>
+                                <p class="fabric-origin">Đỉnh cao Socola thế giới</p>
+                                <div class="fabric-preview-line"></div>
+                                <p class="fabric-front-desc">Socola đen nguyên chất từ hạt cacao Criollo thượng hạng, hậu vị đắng thanh mượt mà hòa cùng vị chua nhẹ trái cây.</p>
+                                <span class="flip-hint">↺ Rê chuột hoặc chạm để lật thẻ</span>
+                            </div>
+                            <!-- Mặt sau -->
+                            <div class="flip-card-back">
+                                <h4 class="back-title">Tiêu Chuẩn Socola Bỉ - Pháp</h4>
+                                <ul class="spec-list">
+                                    <li><strong>Hạt Cacao:</strong> 100% Cacao hạt tuyển chọn tự nhiên</li>
+                                    <li><strong>Hương thơm:</strong> Nốt hương gỗ tuyết tùng và vanilla rừng</li>
+                                    <li><strong>Độ sánh mịn:</strong> Xay mịn 15 micron siêu mượt mà</li>
+                                    <li><strong>Sử dụng cho:</strong> Bánh Mousse, Ganache Macaron, Opera</li>
+                                </ul>
+                                <a href="#booking" class="btn btn-burgundy-small">Khám Phá Vị Bánh</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Flip Card 3 -->
+                    <div class="flip-card-wrapper" tabindex="0">
+                        <div class="flip-card-inner">
+                            <!-- Mặt trước -->
+                            <div class="flip-card-front">
+                                <div class="fabric-badge">Uji Kyoto, Nhật Bản</div>
+                                <div class="fabric-icon">🍵</div>
+                                <h3 class="fabric-name">MATCHA UJI CEREMONIAL</h3>
+                                <p class="fabric-origin">Cái nôi trà đạo Nhật Bản</p>
+                                <div class="fabric-preview-line"></div>
+                                <p class="fabric-front-desc">Búp trà non che râm 3 tuần được nghiền bằng cối đá granite, giữ trọn sắc xanh lục bảo và vị ngọt hậu Umami sâu thẳm.</p>
+                                <span class="flip-hint">↺ Rê chuột hoặc chạm để lật thẻ</span>
+                            </div>
+                            <!-- Mặt sau -->
+                            <div class="flip-card-back">
+                                <h4 class="back-title">Tiêu Chuẩn Trà Xanh Uji</h4>
+                                <ul class="spec-list">
+                                    <li><strong>Phẩm cấp:</strong> Nghi lễ Trà Đạo (Ceremonial Grade)</li>
+                                    <li><strong>Màu sắc:</strong> Xanh ngọc lục bảo tươi sáng tự nhiên</li>
+                                    <li><strong>Hương vị:</strong> Thơm nồng cỏ non, chát dịu và ngọt bùi</li>
+                                    <li><strong>Sử dụng cho:</strong> Tiramisu Matcha, Mousse trà xanh</li>
+                                </ul>
+                                <a href="#booking" class="btn btn-burgundy-small">Khám Phá Vị Bánh</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             ARTISAN BAKING PROCESS (5 Steps)
+        =============================================== -->
+        <section id="process" class="section process-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-eyebrow">HÀNH TRÌNH TẠO MÓN</span>
+                    <h2 class="section-title">5 Bước Tạo Nên Mẻ Bánh Hoàn Mỹ</h2>
+                    <div class="burgundy-line"></div>
+                    <p class="section-desc">Cùng Master Pastry Chef Hồ Nguyễn Mai Trang tạo nên những hương vị ngọt ngào đánh thức mọi giác quan.</p>
+                </div>
+
+                <div class="process-timeline">
+                    <!-- Step 1 -->
+                    <div class="timeline-step">
+                        <div class="step-num">01</div>
+                        <div class="step-body">
+                            <h3 class="step-heading">Tuyển Chọn Nguyên Liệu Tinh Khiết</h3>
+                            <p class="step-desc">Từng quả trứng gà tươi trang trại, thanh vani đảo Madagascar và khối bơ Normandy được kiểm tra nhiệt độ nghiêm ngặt trước khi làm bánh.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="timeline-step">
+                        <div class="step-num">02</div>
+                        <div class="step-body">
+                            <h3 class="step-heading">Nhào Bột & Lên Men Lạnh 48H</h3>
+                            <p class="step-desc">Bột bánh được ủ lạnh chậm rãi suốt 48 giờ để vi sinh vật tự nhiên phát triển, tạo nên kết cấu ruột bánh mềm xốp thơm ngát men bơ.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="timeline-step">
+                        <div class="step-num">03</div>
+                        <div class="step-body">
+                            <h3 class="step-heading">Tạo Phom & Cán Màng Ngàn Lớp</h3>
+                            <p class="step-desc">Nghệ nhân cán gấp bột và bơ xen kẽ tạo nên đúng 81 lớp vi mô mỏng tang, sẵn sàng bừng nở giòn xốp trong lò nướng đối lưu.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="timeline-step">
+                        <div class="step-num">04</div>
+                        <div class="step-body">
+                            <h3 class="step-heading">Nướng Bánh Ở Nhiệt Độ Tiêu Chuẩn</h3>
+                            <p class="step-desc">Kiểm soát ẩm và nhiệt độ lò nướng chính xác từng độ C để lớp vỏ đạt màu vàng caramel óng ả và tỏa hương thơm nức căn bếp.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="timeline-step">
+                        <div class="step-num">05</div>
+                        <div class="step-body">
+                            <h3 class="step-heading">Trang Trí Thủ Công & Đóng Hộp Quà</h3>
+                            <p class="step-desc">Đính kết trái cây tươi mọng, phủ lớp nhũ vàng thực phẩm và thắt ruy băng màu Burgundy sang trọng trao tận tay khách hàng.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             PARALLAX BANNER (Kế Thừa Bài 4 Buổi 5 Thuần CSS)
+             Tuyên ngôn từ Master Pastry Chef Hồ Nguyễn Mai Trang
+        =============================================== -->
+        <section class="parallax-quote-section">
+            <div class="parallax-quote-overlay">
+                <div class="container text-center quote-content">
+                    <span class="quote-symbol">❝</span>
+                    <blockquote class="quote-text">
+                        Làm bánh ngọt không đơn thuần chỉ là công thức đong đếm bột và bơ. Đó là nghệ thuật gieo niềm hạnh phúc và sự ngọt ngào vào từng khoảnh khắc sum vầy.
+                    </blockquote>
+                    <div class="quote-author">
+                        <strong>HỒ NGUYỄN MAI TRANG</strong>
+                        <span>Founder & Master Pastry Chef</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             CUSTOMER REVIEWS / SOCIAL PROOF
+        =============================================== -->
+        <section class="section reviews-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-eyebrow">TÍN ĐỒ BÁNH PHÁP NÓI GÌ</span>
+                    <h2 class="section-title">Những Chia Sẻ Từ Khách Hàng Thân Thiết</h2>
+                    <div class="burgundy-line"></div>
+                </div>
+
+                <div class="reviews-grid">
+                    <article class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-body">“Bánh Red Velvet ở tiệm của chị Mai Trang là ngon nhất mình từng ăn ở Sài Gòn. Cốt bánh ẩm mịn, kem cheese chua béo vừa phải, không hề bị ngọt gắt. Cả gia đình mình ai cũng mê mẩn!”</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">TT</div>
+                            <div>
+                                <h4 class="reviewer-name">Trần Thùy Trang</h4>
+                                <p class="reviewer-role">Food Blogger & Nhiếp ảnh gia ẩm thực</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-body">“Croissant bơ hạnh nhân ở đây giòn rụm đến lớp vỏ cuối cùng, thơm phức mùi bơ Pháp. Thưởng thức cùng một ấm trà Earl Grey nóng buổi sáng thì không còn gì tuyệt vời hơn!”</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">NL</div>
+                            <div>
+                                <h4 class="reviewer-name">Nguyễn Khánh Linh</h4>
+                                <p class="reviewer-role">Giám Đốc Sáng Tạo Studio D'Art</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-body">“Không gian tiệm bánh phối màu Burgundy và Beige ấm cúng, sang trọng như một góc phố Paris thu nhỏ. Bánh Macaron giòn xốp đúng điệu, hộp quà thắt nơ tinh tế rất thích hợp mang đi tặng.”</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">ĐH</div>
+                            <div>
+                                <h4 class="reviewer-name">Đặng Quốc Huy</h4>
+                                <p class="reviewer-role">Kiến Trúc Sư Nội Thất Heritage</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             APPOINTMENT & ORDER FORM (Thuần HTML5 Validation)
+        =============================================== -->
+        <section id="booking" class="section booking-section">
+            <div class="container">
+                <div class="booking-wrapper">
+                    <div class="booking-intro">
+                        <span class="section-eyebrow">DỊCH VỤ ĐẶT TRƯỚC</span>
+                        <h2 class="booking-title">Đặt Bánh Sự Kiện Hoặc Bàn Trà Chiều VIP</h2>
+                        <p class="booking-desc">Để các mẻ bánh được nướng tươi mới và không gian bàn trà được chuẩn bị chu đáo nhất, quý khách vui lòng đặt trước tối thiểu 2 giờ.</p>
+
+                        <ul class="booking-perks">
+                            <li>🥐 Bánh nướng mới 100% trong vòng 2 giờ trước khi giao nhận.</li>
+                            <li>🍰 Miễn phí nến sinh nhật, thiệp chúc mừng viết tay cao cấp.</li>
+                            <li>☕ Không gian thưởng trà chiều phong cách quý tộc Pháp sang trọng.</li>
+                        </ul>
+                    </div>
+
+                    <form class="booking-form" id="appointment-form" action="#booking" method="GET">
+                        <h3 class="form-heading">Thông Tin Đặt Bánh & Bàn Trà</h3>
+
+                        <div class="form-group">
+                            <label for="book-name">Họ và tên Quý khách *</label>
+                            <input type="text" id="book-name" name="fullname" required placeholder="Ví dụ: Lê Minh Trí" class="form-input">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="book-phone">Số điện thoại nhận bánh *</label>
+                                <input type="tel" id="book-phone" name="phone" required placeholder="0918 xxx xxx" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="book-email">Địa chỉ Email</label>
+                                <input type="email" id="book-email" name="email" placeholder="khachhang@domain.com" class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="book-service">Nhu cầu đặt bánh *</label>
+                                <select id="book-service" name="service" class="form-input" required>
+                                    <option value="birthday-cake">Bánh Kem Sinh Nhật & Sự Kiện Nghệ Thuật</option>
+                                    <option value="croissant-box">Combo Bánh Mì Croissant Ngàn Lớp (6 chiếc)</option>
+                                    <option value="macaron-gift">Hộp Quà Bánh Macaron 12 Vị Hoàng Gia</option>
+                                    <option value="high-tea">Đặt Bàn Thưởng Trà Chiều Cho 2-4 Người</option>
+                                    <option value="custom-catering">Tiệc Bàn Bánh Teabreak Doanh Nghiệp</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="book-date">Ngày nhận bánh / ghé tiệm *</label>
+                                <input type="date" id="book-date" name="date" required class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="book-note">Ghi chú yêu cầu đặc biệt</label>
+                            <textarea id="book-note" name="note" rows="3" placeholder="Chữ viết lên bánh sinh nhật, số lượng nến, hoặc độ ngọt mong muốn..." class="form-input"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-burgundy btn-block">
+                            Xác Nhận Đặt Bánh Ngọt Ngay
+                        </button>
+                        <p class="form-privacy-note">🔒 Thông tin của quý khách được bảo mật tuyệt đối tại Mai Trang Patisserie.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================================================
+         3. FOOTER (Chuẩn Semantic <footer>)
+    ================================================== -->
+    <footer id="contact" class="site-footer">
+        <div class="container footer-content">
+            <!-- Brand Column -->
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <span class="crest-monogram">MT</span>
+                    <span class="brand-name">MAI TRANG PATISSERIE</span>
+                </div>
+                <p class="footer-tagline">Tiệm bánh ngọt nghệ thuật & trà chiều phong cách Pháp thủ công, kết tinh từ niềm đam mê đem lại hương vị ngọt ngào và hạnh phúc trọn vẹn.</p>
+                <div class="footer-badges">
+                    <span class="badge-tag">Normandy Butter 82%</span>
+                    <span class="badge-tag">Valrhona Chocolate</span>
+                    <span class="badge-tag">Baked Fresh Daily</span>
+                </div>
+            </div>
+
+            <!-- Links Column -->
+            <div class="footer-col">
+                <h4 class="footer-title">Menu Bánh Ngọt</h4>
+                <ul class="footer-links">
+                    <li><a href="#products">Bánh Kem Sinh Nhật Nghệ Thuật</a></li>
+                    <li><a href="#products">Bánh Mì Croissant Ngàn Lớp</a></li>
+                    <li><a href="#products">Bánh Macaron Paris Đủ Vị</a></li>
+                    <li><a href="#products">Tart Trái Cây & Phô Mai Nướng</a></li>
+                    <li><a href="#products">Set Trà Chiều Hoàng Gia</a></li>
+                </ul>
+            </div>
+
+            <!-- Services Column -->
+            <div class="footer-col">
+                <h4 class="footer-title">Dịch Vụ Khách Hàng</h4>
+                <ul class="footer-links">
+                    <li><a href="#process">Quy Trình Làm Bánh Thủ Công</a></li>
+                    <li><a href="#fabrics">Bảng Tra Cứu Nguyên Liệu</a></li>
+                    <li><a href="#booking">Đặt Bàn Thưởng Trà Chiều</a></li>
+                    <li><a href="#home">Chính Sách Giao Bánh Trong 2H</a></li>
+                    <li><a href="#home">Hướng Dẫn Bảo Quản Bánh Lạnh</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div class="footer-col contact-col">
+                <h4 class="footer-title">Xưởng Bánh & Tiệm Trà</h4>
+                <address class="footer-address">
+                    <p>📍 <strong>Showroom 1:</strong> 120 Đại Lộ Patisserie, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh</p>
+                    <p>📍 <strong>Tiệm Trà Chiều:</strong> 25 Phố Hàng Bông, Hoàn Kiếm, Hà Nội</p>
+                    <p>📞 <strong>Hotline Tiệm Bánh:</strong> <a href="tel:0918125156">0918.125.TRANG (0918.125.156)</a></p>
+                    <p>✉️ <strong>Thư điện tử:</strong> <a href="mailto:maitrang.bakery@artisan.com">maitrang.bakery@artisan.com</a></p>
+                    <p>⏰ <strong>Giờ mở cửa:</strong> 06:30 - 22:00 (Mỗi ngày, có bánh nóng từ 7h sáng)</p>
+                </address>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p class="copyright-text">
+                    © 2026 <strong>MAI TRANG PATISSERIE</strong>. Sáng lập & Thiết kế bởi <strong>Hồ Nguyễn Mai Trang</strong> (MSSV: 125001156). Đề thi Giữa kỳ Thiết kế Web.
+                </p>
+                <div class="footer-cert">
+                    <span>Chuẩn Semantic HTML5 • CSS Grid & Flexbox • Animate.css • 100% Thuần CSS Không Dùng JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================================================
+         FLOATING ACTION BUTTON (Kế Thừa Bài 1 Buổi 5 Thuần CSS)
+    ================================================== -->
+    <aside class="floating-container" aria-label="Hỗ trợ nhanh">
+        <a href="#booking" class="fab fab-booking" title="Đặt bánh tươi nhanh" aria-label="Đặt bánh tươi">
+            <span class="fab-icon">🍰</span>
+            <span class="fab-label">Đặt Bánh</span>
+        </a>
+        <a href="tel:0918125156" class="fab fab-call" title="Gọi Hotline đặt bánh" aria-label="Gọi hotline">
+            <span class="fab-icon">📞</span>
+        </a>
+    </aside>
+
+</body>
+</html>
